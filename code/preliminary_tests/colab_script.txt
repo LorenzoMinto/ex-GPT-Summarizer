@@ -1,0 +1,7 @@
+%%shell
+python -m spacy download en
+pip install ftfy
+git clone https://github.com/Kmeco/ucl-nlp-project.git
+
+cd ucl-nlp-project/preliminary_tests
+python train.py --dataset rocstories --desc rocstories --submit --analysis --data_dir 'data'
